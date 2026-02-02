@@ -4,3 +4,12 @@ Pick some subset of the information covered in your annual review article that y
 
 Identify the scope of your user guide - what will you cover? Specific software packages? When to use or not to use a specific technique?
 
+--------------------------------------------------------------------------------
+
+I will be going through ways of how to prevent sensitive questions on surveys and polls from negatively affecting the Response Rate. The Review Article talks about 5 key ways to do this:
+
+- Self-Administration of Survey/Poll (Non-Interview Methods)
+- Ensuring Privacy, Confidentiality, and Anonymity (Eliminating the Bystander Effect and Respondent Identifiers)
+- Asking Indirect versus Direct Questions (Randomized Response, Item Count Techniques)
+- Respondent Psychological Manipulation (Bogus Pipeline Technique)
+- Priming (Supplemental Material before Questions and Question Phrasing)
