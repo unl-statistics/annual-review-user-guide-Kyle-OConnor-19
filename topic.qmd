@@ -13,3 +13,12 @@ I will be going through ways of how to prevent sensitive questions on surveys an
 - Asking Indirect versus Direct Questions (Randomized Response, Item Count Techniques)
 - Respondent Psychological Manipulation (Bogus Pipeline Technique)
 - Priming (Supplemental Material before Questions and Question Phrasing)
+
+
+
+::: callout-note
+# Comments/suggestions
+
+Make sure you also provide good examples of what sensitive questions are and how certain techniques are and are not appropriate for certain types of sensitive questions. If you can find real-world data for e.g. sensitive vs. not sensitive questions covering the same topic, it may be helpful to use that to demonstrate. 
+
+:::
