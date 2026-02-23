@@ -10,6 +10,24 @@ I will be going through ways of how to prevent sensitive questions on surveys an
 
 - Self-Administration of Survey/Poll (Non-Interview Methods)
 - Ensuring Privacy, Confidentiality, and Anonymity (Eliminating the Bystander Effect and Respondent Identifiers)
-- Asking Indirect versus Direct Questions (Randomized Response, Item Count Techniques)
-- Respondent Psychological Manipulation (Bogus Pipeline Technique)
-- Priming (Supplemental Material before Questions and Question Phrasing)
+- Asking Indirect versus Direct Questions (Randomized Response and Item Count Techniques, Bogus Pipeline Technique)
+- Priming (Supplemental Material before Questions)
+- Question Phrasing
+
+I will break my User Guide down in the following ways:
+
+1) Preparing the Survey
+- Privacy, Confidentiality, and Anonymity Concerns
+- Types of Questions being Asked (Direct versus Indirect, Question Phrasing)
+- Breaking down Complex Questions into Simpler, Direct Questions
+- Avoid vague Terminology or Phrasing. If this is unavoidable, clearly define the term.
+
+2) Carrying out the Survey
+
+*Explanations of the Bystander Effect, RRT, ICR, and Bogus Pipeline Methods*
+
+- If possible, make the Survey self-administered and remove the possibility of the Bystander Effect
+- If the Survey/Poll must be conducted in-person, use the Supplemental Material Technique, RRT, ICT, and Bogus Pipeline if needed to reduce the chance of non-response or measurement bias. (I advise against the Bogus Pipeline technique as it makes you look less trustworthy in the future)
+
+
+

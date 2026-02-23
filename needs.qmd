@@ -1,9 +1,17 @@
 # Needs Assessment {.appendix}
 
-What does someone trying to accomplish your chosen task need help with? 
+What does someone trying to accomplish your chosen task need help with?
 
-What parts are likely to be tricky? 
+What parts are likely to be tricky?
 
 What resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on.
 
+------------------------------------------------------------------------
 
+## Someone trying to reduce errors in surveys involving sensitive questions would need help with:
+
+-   Identifying whether or not a Question can be perceived by their Target Audience as Sensitive, as different groups of people can perceive different types of questions/topics as Sensitive
+-   Determining what Format of Survey to Use (Self-Administration, In-Person, Hybrid-Model) to best serve the Interests of the Survey while keeping Response Error Rates to a Minimum
+-   How to deal with issues of confidentiality and anonymity. When is it needed?
+-   How to phrase questions in a way to try and promote Honest Answers from Respondents
+-   How to handle Respondent's Privacy Concerns
