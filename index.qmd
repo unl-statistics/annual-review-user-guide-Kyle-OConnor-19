@@ -21,10 +21,8 @@ You should also take the time to make sure your name is listed as both author an
 Feel free to make a custom cover for your manual if you would like to do so. 
 You can also tweak the CSS/theme for the book, so long as you're conscious of accessibility concerns. 
 
-::: callout-caution
 ## Building the report
 
 If you are using RStudio to complete this report, you can hit (Ctrl/Cmd)-Shift-B to build the whole report. You can also type `quarto render .` on the command line in the project folder to accomplish the same thing.
 
 If you have questions about how to customize or debug your book, it may be helpful to start at the quarto book documentation [@positpbcCreatingBook2024]. 
-:::
