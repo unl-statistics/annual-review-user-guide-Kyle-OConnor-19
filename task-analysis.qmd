@@ -47,7 +47,7 @@ It is also important to understand that it is impossible to 100% remove the effe
 
 **Pre-Data Collection Requirements**
 
--   Surveyors need to research their target population and examine its underlying characteristics. What are the socioeconomic statuses of the population? Are there any commonalities such as ethnicity, religion, political beliefs, historical or current events, or traditions that are uniquely more prevalent in this population?
+-   Surveyors need to do some preliminary research on their target population and examine its underlying characteristics. Are there any commonalities such as ethnicity, religion, political beliefs, historical or current events, or traditions that are uniquely more prevalent in this population?
 -   What format(s) can the survey be issued in? Does it need to be done In-Person? Can it be done asynchronously online? Is there a need for observers? To minimize the effects of non-response and misreporting biases, researchers recommend an asynchronous approach.
 -   What is being done to ensure the confidentiality and/or anonymity of responses? The effects of both bias types are much higher in cases where respondents are aware of or believe that their responses are neither confidential nor anonymous. If these are impossible to ensure (or do at all), make sure the participants are aware ahead of time to maintain a positive relationship between surveyor and respondent.
 -   Determine whether or not the sensitive question needs to be included at all. If it's possible to collect the information needed without asking any sensitive questions, *remove the question*.
