@@ -37,9 +37,9 @@ This document should remain as an appendix to your main report.
 
 Before addressing the matter of sensitive questions, it is assumed that:
 
-1.  There is an existing survey template/outline being used (Online Survey (Google Forms/Microsoft Forms) or Physical Survey).
+1.  There is an existing survey template/outline being used (Online Survey (Google Forms/Microsoft Forms) or Physical Survey Design).
 
-2.  There is a clear set of question(s) that the survey is aiming to address that is known.
+2.  There is a clear set of underlying question(s) that the survey is aiming to address.
 
 3.   The audience/target population of the survey is known and clearly defined.
 
