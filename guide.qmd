@@ -22,7 +22,7 @@ The goal of this user guide is thus to guide you through the process of understa
 
 For the purposes of this user guide, it is helpful to clearly define the terms that will be used throughout this guide.
 
-[**Sensitvity**]{style="background-color: #FFFF00;"} - A survey question is deemed sensitive whenever a respondent's answer can be seen as socially undesirable, personally intrusive, or result in a potential detrimental outcome if someone else were to find out about the respondent's answer. What makes sensitivity especially difficult to deal with is the fact that sensitivity is inherently subjective. What one person finds sensitive could be seen as a perfectly reasonable thing to ask about to another. However, there are a few general topics that, more often that not, people will deem to be sensitive no matter the circumstance, including:
+[**Sensitivity**]{style="background-color: #FFFF00;"} - A survey question is deemed sensitive whenever a respondent's answer can be seen as socially undesirable, personally intrusive, or result in a potential detrimental outcome if someone else were to find out about the respondent's answer. What makes sensitivity especially difficult to deal with is the fact that sensitivity is inherently subjective. What one person finds sensitive could be seen as a perfectly reasonable thing to ask about to another. However, there are a few general topics that, more often that not, people will deem to be sensitive no matter the circumstance, including:
 
 -   **Religious and Political Beliefs**
 
