@@ -10,7 +10,6 @@ I will be going through ways of how to prevent sensitive questions on surveys an
 
 - Self-Administration of Survey/Poll (Non-Interview Methods)
 - Ensuring Privacy, Confidentiality, and Anonymity (Eliminating the Bystander Effect and Respondent Identifiers)
-<<<<<<< HEAD
 - Asking Indirect versus Direct Questions (Randomized Response and Item Count Techniques, Bogus Pipeline Technique)
 - Priming (Supplemental Material before Questions)
 - Question Phrasing

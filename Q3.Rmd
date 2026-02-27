@@ -1,0 +1,17 @@
+Question
+========
+Where is the best place to put a non-demographic sensitive question in a survey?
+
+Answerlist
+----------
+* At the beginning of the survey, because respondents should answer sensitive questions first to get them over with quicker.
+* In the middle, as it allows respondents to gain a sense of trust and understanding with the survey and/or surveyor.
+* At the end, because respondents are more likely to answer truthfully at the end of a survey after they have already completed most of it.
+* The placement does not matter.
+
+Meta-information
+================
+exname: Question 3
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

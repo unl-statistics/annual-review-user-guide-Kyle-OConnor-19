@@ -1,0 +1,17 @@
+Question
+========
+What determines whether or not a respondent will give an honest answer when using Randomized Response (RRT)?
+
+Answerlist
+----------
+* The surveyor decides at their own discretion.
+* An honest answer will always be given when utilizing RRT.
+* The result of a random binomial event.
+* An honest answer is never given when utilizing RRT.
+
+Meta-information
+================
+exname: Question 4
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

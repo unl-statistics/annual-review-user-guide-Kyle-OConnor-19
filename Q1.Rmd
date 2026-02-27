@@ -1,0 +1,17 @@
+Question
+========
+Which of the Following is NOT a Method of In-Person Sensitivity Measuring?
+
+Answerlist
+----------
+* Priming
+* Randomized Response
+* Unique Response
+* Item Count
+* Bogus Pipeline
+
+Meta-information
+================
+exname: Question 1
+extype: schoice
+exsolution: 00100

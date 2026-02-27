@@ -56,6 +56,8 @@ It is also important to understand that it is impossible to 100% remove the effe
 -   Determine whether or not the sensitive question needs to be included at all. If it's possible to collect the information needed without asking any sensitive questions, *remove the question*.
 -   Have a clear and rigid privacy policy in place. Make sure that this policy is being followed at all times throughout the entire data collection and storing process.
 
+**Confidentiality, Anonymity, and Privacy**
+
 **Data Collection Requirements**
 
 -   For Asynchronous Surveys that ensure confidentiality AND anonymity, most of this step can be ignored.

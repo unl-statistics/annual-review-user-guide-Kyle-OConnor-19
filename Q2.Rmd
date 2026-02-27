@@ -1,0 +1,17 @@
+Question
+========
+Which of the Following Questions would be the least Sensitive?
+
+Answerlist
+----------
+* What is your annual income?
+* How many sexual partners have you had in the last 2 years?
+* What is your sexuality?
+* Test
+* Bogus Pipeline
+
+Meta-information
+================
+exname: Question 2
+extype: schoice
+exsolution: 00100
