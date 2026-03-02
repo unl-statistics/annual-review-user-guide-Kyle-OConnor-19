@@ -95,6 +95,7 @@ Before addressing the matter of sensitive questions themselves, some pre-requisi
 Now that you understand the basics and pre-requisites, we can begin examining the process of handling sensitive questions in surveys.
 
 ```{mermaid}
+%%{init: {'theme': 'neutral'}}%%
 flowchart LR
   Privacy["Data Protection"] --> Formatting{"Formatting"}
   Formatting{"Formatting"} --> AsynchronousOnline["Asynchronous/Online"]
@@ -171,6 +172,7 @@ Place sensitive questions towards the middle of a survey, as it allows trust to 
 ::::: columns
 ::: {.column width="50%" style="text-align: center;"}
 ```{mermaid}
+%%{init: {'theme': 'neutral'}}%%
 flowchart TB
   subgraph Track1[Correct Method]
     direction TB
@@ -184,6 +186,7 @@ flowchart TB
 
 ::: {.column width="50%" style="text-align: center;"}
 ```{mermaid}
+%%{init: {'theme': 'neutral'}}%%
 flowchart TB
   subgraph Track2[Incorrect Method]
     direction TB
@@ -240,6 +243,7 @@ In this example, providing a range allows the respondent to not worry about prov
 Explanation: Before answering each sensitive question, a random, fair, and binomial (2-option) event occurs. Based on the result of that random event, the respondent either answers the question honestly or provides an answer that allows them to conceal the truth.
 
 ```{mermaid}
+%%{init: {'theme': 'neutral'}}%%
 flowchart LR
   A["Randomization (Fair Die, Fair Coin)"] --> B{"Result"}
   B{"Result"} --> C["Success (Odd Number, Heads)"]

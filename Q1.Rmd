@@ -1,17 +1,20 @@
+# Check your Understanding 1
+
 Question
 ========
-Which of the Following is NOT a Method of In-Person Sensitivity Measuring?
+Which of the Following are classified as General Sensitive Topics?
 
 Answerlist
 ----------
-* Priming
-* Randomized Response
-* Unique Response
-* Item Count
-* Bogus Pipeline
+* Political Beliefs
+* Personal Health
+* Personal Finances
+* Sexual Activity
+* Illegal Activity
 
 Meta-information
 ================
-exname: Question 1
-extype: schoice
-exsolution: 00100
+exname: Check your Understanding 1
+extype: mchoice
+exsolution: 11111
+exshuffle: TRUE
