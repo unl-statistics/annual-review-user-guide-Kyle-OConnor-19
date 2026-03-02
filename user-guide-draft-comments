@@ -1,0 +1,81 @@
+1. You need to edit _quarto.yml to include your name, title, and other details.
+2. I got hit with a quarto bug when compiling:
+
+[1/6] index.qmd
+[WARNING] Citeproc: citation positpbcCreatingBook2024 not found
+[2/6] guide.qmd
+
+
+processing file: guide.qmd
+1/19
+2/19 [graph]
+3/19
+4/19 [unnamed-chunk-1]
+5/19
+6/19 [unnamed-chunk-2]
+7/19
+8/19 [unnamed-chunk-3]
+9/19
+10/19 [unnamed-chunk-4]
+11/19
+12/19 [unnamed-chunk-5]
+13/19
+14/19 [unnamed-chunk-6]
+15/19
+16/19 [unnamed-chunk-7]
+17/19
+18/19 [unnamed-chunk-8]
+19/19
+output file: guide.knit.md
+
+FATAL (/opt/quarto/share/filters/main.lua:3945) An error occurred:
+Error resolving include-after- unable to open file webex.js
+[WARNING] Ignoring duplicate attribute style="width:50%;".
+[WARNING] Ignoring duplicate attribute style="width:50%;".
+
+
+processing file: guide.qmd
+1/19
+2/19 [graph]
+3/19
+4/19 [unnamed-chunk-1]
+5/19
+6/19 [unnamed-chunk-2]
+7/19
+8/19 [unnamed-chunk-3]
+9/19
+10/19 [unnamed-chunk-4]
+11/19
+12/19 [unnamed-chunk-5]
+13/19
+14/19 [unnamed-chunk-6]
+15/19
+16/19 [unnamed-chunk-7]
+17/19
+18/19 [unnamed-chunk-8]
+19/19
+output file: guide.knit.md
+
+ERROR: Internal Error: Couldn't find an svg element in svg string
+
+This is a bug in quarto. We apologize for the inconvenience.
+Please consider reporting it at https://github.com/quarto-dev/quarto-cli. Thank you!
+
+Stack trace:
+    at resolveSize (file:///opt/quarto/bin/quarto.js:120856:11)
+    at eventLoopTick (ext:core/01_core.js:178:7)
+    at async makePng (file:///opt/quarto/bin/quarto.js:121255:11)
+    at async makeDefault (file:///opt/quarto/bin/quarto.js:121321:16)
+    at async Object.cell (file:///opt/quarto/bin/quarto.js:121354:14)
+    at async Promise.all (index 0)
+    at async Object.document (file:///opt/quarto/bin/quarto.js:70839:21)
+    at async handleLanguageCells (file:///opt/quarto/bin/quarto.js:70804:34)
+    at async file:///opt/quarto/bin/quarto.js:125072:41
+    at async withTimingAsync (file:///opt/quarto/bin/quarto.js:20124:21)
+
+
+Wondering if you get the same bug?
+
+In any case, keep in mind that you can do forms that aren't as complicated using - [ ] in markdown notation as a checkbox. Because of the quarto error, I can't get the forms to actually work, which is a shame.
+
+3. Your SVGs aren't readable to me -- black backgrounds on the shapes along with black text. Make sure that everything is readable/accessible, please.
