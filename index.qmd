@@ -143,7 +143,7 @@ The other option for an online format (that cannot be done asynchronously) comes
 ::: callout-warning
 ## The Bystander Effect
 
-In both virtual and in-person settings, be cautious of the respondent's environment. If there are other people in the room, there is a high risk of response interference from the **Bystander Effect**, which can dramatically increase the rate of misreporting bias. If possible, encourage all bystanders to leave the area in which the respondent is providing answers. If the respondent is completing the survey asynchronously, strongly encourage them to complete the survey away from others.
+In both virtual and in-person settings, be cautious of the respondent's environment. If there are other people in the room, there is a high risk of response interference from the **Bystander Effect**, which can dramatically increase the rate of misreporting bias. This phenomenon occurs because respondents don't want to share sensitive information about themselves with others in the room, even with close family members or friends, because they fear negative social consequences. If possible, encourage all bystanders to leave the area in which the respondent is providing answers. If the respondent is completing the survey asynchronously, strongly encourage them to complete the survey away from others.
 :::
 
 ***In-Person***
