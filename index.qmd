@@ -263,7 +263,7 @@ If you are using RRT, it is important to understand that because you do not know
 This method involves randomly assigning respondents with a list of possible options to a question, including an option that directly correlates with the sensitive question. The respondent is then asked to state how many options apply to them, without specifying with responses apply, creating a count variable.
 
 ::: {.callout-note title="Example A:  Control"}
-How many of the following statements accurately represents you?
+How many of the following statements accurately represent you?
 
 -   I have attended a local community event.
 -   I have a kid in local public school.
@@ -272,7 +272,7 @@ How many of the following statements accurately represents you?
 :::
 
 ::: {.callout-note title="Example B: Treatment"}
-How many of the following statements accurately represents you?
+How many of the following statements accurately represent you?
 
 -   I have attended a local community event.
 -   I have a kid in public school.
