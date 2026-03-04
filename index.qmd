@@ -220,7 +220,7 @@ In this example, note that there are several responses that help the respondent 
 Instead of asking for specific answers, provide a range of possible values that the respondent can select instead. This will give the respondent an extra layer of response anonymity while still providing useful information to the surveyor.
 
 ::: {.callout-note title="Example"}
-How much money have you contributed to charitable organizations within the last year? -
+How much money have you contributed to charitable organizations within the last year?
 
 -   Less than \$99.99
 
