@@ -8,7 +8,7 @@ format:
     css: webex.css
     include-after-body: webex.js
   gfm:
-    mermaid-format: png
+    mermaid-format: js
   pdf:
     mermaid-format: png
 ---
