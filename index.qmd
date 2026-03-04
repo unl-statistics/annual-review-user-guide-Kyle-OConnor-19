@@ -8,6 +8,8 @@ format:
     include-after-body: webex.js
   gfm:
     mermaid-format: png
+  pdf:
+    mermaid-format: png
 ---
 
 # Handling Sensitive Questions in Surveys
