@@ -3,12 +3,12 @@ title: "User Guide: Handling Sensitive Questions in Surveys"
 author: "Kyle O'Connor"
 format:
   html:
-    mermaid-format: js
+    mermaid-format: png
     embed-resources: true
     css: webex.css
     include-after-body: webex.js
   gfm:
-    mermaid-format: js
+    mermaid-format: png
   pdf:
     mermaid-format: png
 ---
