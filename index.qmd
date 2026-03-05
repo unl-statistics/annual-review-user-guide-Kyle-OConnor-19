@@ -13,7 +13,7 @@ format:
     mermaid-format: png
 ---
 
-# Handling Sensitive Questions in Surveys
+# Handling Sensitive Questions in Surveys #
 
 When it comes to survey design, there comes a time where researchers and analysts are looking to examine some of the under-the-surface aspects of a population. Large businesses want to examine the financial standings of a city's residents to see if a new store would be able to generate profits. Insurance providers want to understand the health of their customers to understand potential future risks and to provide adequate preventive care. Pollsters want to understand the political leanings of key swing districts for an upcoming election. No matter the goal, collecting accurate data can often be very difficult because respondents are wary of the nature of these studies. As a result, respondents often like to misrepresent their true behavior to make themselves appear like better people. The effects of this phenomenon, known as sensitivity, can make analyzing the results of surveys particularly difficult and even potentially misleading in some scenarios. 
 
