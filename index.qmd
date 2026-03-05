@@ -13,9 +13,9 @@ format:
     mermaid-format: png
 ---
 
-# Handling Sensitive Questions in Surveys #
+# Handling Sensitive Questions in Surveys
 
-When it comes to survey design, there comes a time where researchers and analysts are looking to examine some of the under-the-surface aspects of a population. Large businesses want to examine the financial standings of a city's residents to see if a new store would be able to generate profits. Insurance providers want to understand the health of their customers to understand potential future risks and to provide adequate preventive care. Pollsters want to understand the political leanings of key swing districts for an upcoming election. No matter the goal, collecting accurate data can often be very difficult because respondents are wary of the nature of these studies. As a result, respondents often like to misrepresent their true behavior to make themselves appear like better people. The effects of this phenomenon, known as sensitivity, can make analyzing the results of surveys particularly difficult and even potentially misleading in some scenarios. 
+When it comes to survey design, there comes a time where researchers and analysts are looking to examine some of the under-the-surface aspects of a population. Large businesses want to examine the financial standings of a city's residents to see if a new store would be able to generate profits. Insurance providers want to understand the health of their customers to understand potential future risks and to provide adequate preventive care. Pollsters want to understand the political leanings of key swing districts for an upcoming election. No matter the goal, collecting accurate data can often be very difficult because respondents are wary of the nature of these studies. As a result, respondents often like to misrepresent their true behavior to make themselves appear like better people. The effects of this phenomenon, known as sensitivity, can make analyzing the results of surveys particularly difficult and even potentially misleading in some scenarios.
 
 The goal of this user guide is thus to guide you through the process of understanding what sensitivity is, how it can bias the results, and provide some strategies you can use to combat its effects.
 
@@ -54,6 +54,7 @@ This user guide focuses on two types of biases: misreporting bias and nonrespons
 [**Nonresponse Bias**]{style="background-color: #FFFF00;"} - Respondents choose not to provide any response to a question. This occurs because respondents feel that revealing any answer may cause negative social ramifications. Nonresponse bias can be especially troubling for surveyors because a single nonresponse (known as *unit nonresponse*) can cause a chain reaction of multiple nonresponses (known as *chain nonresponse*) throughout the rest of the survey.
 
 The unique challenge that these two biases present for researchers is that they are not independent. When researchers try to suppress the effect of nonresponse, if often results in an increase in misreporting, and the same is true in reverse. This is because when respondents are told that not responding isn't an option, they often will misreport instead to try and conceal the truth. Likewise, if respondents are told not to misrepresent themselves, they often will choose not to respond to sensitive questions instead. This creates an inverse relationship between the two bias types, which makes eliminating both bias types nearly impossible. That being said, the goal of this user guide is to help suppress the effects of these biases, even if full elimination is not possible.
+
 ```{r}
 #| echo: false
 #| results: "asis"
@@ -97,15 +98,7 @@ Before addressing the matter of sensitive questions themselves, some pre-requisi
 
 Now that you understand the basics and pre-requisites, we can begin examining the process of handling sensitive questions in surveys.
 
-```{mermaid}
-flowchart LR
-  Privacy["Data Protection"] --> Formatting{"Formatting"}
-  Formatting{"Formatting"} --> AsynchronousOnline["Asynchronous/Online"]
-  Formatting{"Formatting"} --> In-Person["In-Person"]
-  AsynchronousOnline["Asynchronous/Online"] --> Techniques["Collection Techniques"]
-  In-Person["In-Person"] --> Techniques["Collection Techniques"]
-  Techniques["Collection Techniques"] --> Results["Measuring Results and Accuracy"]
-```
+![Sensitivty Question Pathway](guide_pathway.png)
 
 ------------------------------------------------------------------------
 
@@ -163,7 +156,7 @@ After understanding your format, you can now begin to look at collection methods
 
 -   Avoid using unfamiliar vocabulary or jargon in your questions. Make the question easily understandable so that the respondent knows exactly what you are asking about.
 -   If you need to ask a complex question, try breaking the question down into simpler, easy-to-answer parts. You can compile these results for analysis afterwards, but try not to overwhelm your respondents with one giant question.
--   If possible, provide supplementary material that may help respondents answer questions. If you are asking about an event that took place in the past, see if you can identify a date, location, and/or time. As psychologist Roger Tourangeau states, "Reporting errors due to incorrect dating seem to arise through several distinct mechanisms. People may make incorrect inferences about timing based on the accessibility (or other properties) of the memory, incorrectly guess a date within an uncertain range, and round vague temporal information to prototypical values (such as 30 days)" [@tourangeauPsychologySurveyResponse2000]. If the question involves units, clearly state what the unit is (amount, time, location).  
+-   If possible, provide supplementary material that may help respondents answer questions. If you are asking about an event that took place in the past, see if you can identify a date, location, and/or time. As psychologist Roger Tourangeau states, "Reporting errors due to incorrect dating seem to arise through several distinct mechanisms. People may make incorrect inferences about timing based on the accessibility (or other properties) of the memory, incorrectly guess a date within an uncertain range, and round vague temporal information to prototypical values (such as 30 days)" [@tourangeauPsychologySurveyResponse2000]. If the question involves units, clearly state what the unit is (amount, time, location).
 
 1.  **Sensitive Question Placement**
 
@@ -171,39 +164,17 @@ Place sensitive questions towards the middle of a survey, as it allows trust to 
 
 *Example*:
 
-::::: columns
-::: {.column width="50%" style="text-align: center;"}
-```{mermaid}
-flowchart TB
-  subgraph Track1[Correct Method]
-    direction TB
-    A1["Non-Sensitive Question"] --> B1["Sensitive Question"]
-    B1["Sensitive Question"] --> C1["Sensitive Question"]
-    C1["Sensitive Question"] --> D1["Non-Sensitive Question"]
-  end
-  style Track1 fill:#d5f5e3,stroke:#27ae60
-```
-:::
+::: {layout-ncol=2}
+![Correct Method](guide_correct.png)
 
-::: {.column width="50%" style="text-align: center;"}
-```{mermaid}
-flowchart TB
-  subgraph Track2[Incorrect Method]
-    direction TB
-    A2["Sensitive Question"] --> B2["Non-Sensitive Question"]
-    B2["Non-Sensitive Question"] --> C2["Non-Sensitive Question"]
-    C2["Non-Sensitive Question"] --> D2["Sensitive Question"]
-  end
-  style Track2 fill:#fadbd8,stroke:#e74c3c
-```
+![Incorrect Method](guide_incorrect.png)
 :::
-:::::
 
 [*Best Uses*]{.underline}: All Sensitive Question Types. As mentioned previously, an exception is made for sensitive questions that focus on demographics, as it is best to put those at the end of the survey.
 
 2.  **Priming**
 
-When phrasing sensitive questions, try placing a forgiven tone or provide an outlet for saving face. Show to the respondent that you are aware of, and still respect, options that may not be the most socially desirable. 
+When phrasing sensitive questions, try placing a forgiven tone or provide an outlet for saving face. Show to the respondent that you are aware of, and still respect, options that may not be the most socially desirable.
 
 ::: {.callout-note title="Example"}
 Our local community center recently held its annual community picnic day on June 23rd. We know that everyone has busy lives these days, and we understand that it can easy to forget upcoming events or just run out of time to attend them. With this in mind, which of the following best describes you?
@@ -242,14 +213,7 @@ In this example, providing a range allows the respondent to not worry about prov
 
 Explanation: Before answering each sensitive question, a random, fair, and binomial (2-option) event occurs. Based on the result of that random event, the respondent either answers the question honestly or provides an answer that allows them to conceal the truth.
 
-```{mermaid}
-flowchart LR
-  A["Randomization (Fair Die, Fair Coin)"] --> B{"Result"}
-  B{"Result"} --> C["Success (Odd Number, Heads)"]
-  B{"Result"} --> D["Failure (Even Number, Tails)"]
-  C["Success (Odd Number, Heads)"] --> E["Respondent tells the Truth"]
-  D["Failure (Even Number, Tails)"] --> F["Respondent gives a Predetermined Answer such as 'No' "]
-```
+![Randomized Response Technique Flowchart](guide_RRT.png)
 
 In this example, the randomization tool and the "success" and "failure" outcomes can be customized. For instance, you may choose to flip what defines a success or failure, or use an alternative randomization method such as a random number generator.
 
@@ -372,5 +336,3 @@ library("exams2forms")
 exams2forms("Q4.Rmd")
 ```
 :::
-
-
