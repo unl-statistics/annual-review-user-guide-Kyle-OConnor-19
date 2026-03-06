@@ -167,8 +167,10 @@ Place sensitive questions towards the middle of a survey, as it allows trust to 
 ::: {layout-ncol=2}
 ![Correct Method](guide_correct.png)
 
-![Incorrect Method](guide_incorrect.png)
+![Incorrect Method](guide_incorrect3.png)
 :::
+
+In this example, notice that the sensitive questions for the correct model are placed in the middle of the survey sequence, while for the incorrect model, they are found at the beginning and end. Note that the sensitive questions don't necessarily need to be placed directly one after another, as this model represents a 4-question survey. For longer surveys, the goal is to centralize most, if not all sensitive questions towards the middle of the survey. Non-sensitive questions can be interspersed within the middle of the survey as well.
 
 [*Best Uses*]{.underline}: All Sensitive Question Types. As mentioned previously, an exception is made for sensitive questions that focus on demographics, as it is best to put those at the end of the survey.
 
