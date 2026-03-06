@@ -98,7 +98,7 @@ Before addressing the matter of sensitive questions themselves, some pre-requisi
 
 Now that you understand the basics and pre-requisites, we can begin examining the process of handling sensitive questions in surveys.
 
-![Sensitivty Question Pathway](guide_pathway.png)
+![Sensitivity Question Pathway](guide_pathway.png)
 
 ------------------------------------------------------------------------
 
