@@ -1,0 +1,40 @@
+# Kyle
+
+- Whatever you did for mermaid seems to have worked, at least in HTML on my machine!
+
+- Formatting
+
+    - Nice highlighting/underlining CSS! I don't know that you need to bold the itemized list (it stands out due to the other formatting), though.
+
+    - Your qmd file has a general lack of use of nested headings. This is important for a couple of reasons -- first, it creates a TOC for each chapter that lets readers knwo what to expect and helps them flip back and forth to diff sections using links. Second, it's an accessibility issue. Third, it's much more complicated to use CSS to create that hierarchy yourself. This is a must fix issue, if only so that you can see how much easier it makes your life.
+
+        - I've fixed this just to see what it would look like. Your task is going to be to improve on the sections (and make sure I correctly inferred the basic level/ordering) and to split first-level headings (# Heading name) to separate files that are then added to _quarto.yml. This will fix the overall chapter-level TOC and also make things a lot more navigable.
+
+    - Confidentiality vs. Anonymity callout - first, love that you're using callouts, they're perfect for this type of thing. Second, here's a good place to use an itemized list with bold face for the terms that you're defining.
+
+- Your intro paragraph is full of unnecessary cliche phrases "When it comes to" and "there comes a time" -- you can rewrite this to be more concise, direct, and understandable.
+
+- https://doi.org/10.1016/j.iref.2026.105042 has a great example of misreporting bias -- people rounding heights to 10 cm intervals.
+
+- you can get the same graph of misreporting/nonresponse rate with geom_abline and not having to make a dataset. Also, figures should have labels and captions and be referenced in the text -- see the example in my modifications.
+
+- You don't have to use "such as one done by psychology researchers Anthony D. Ong and David J. Weiss," -- just delete that clause and cite the study parenthetically at the end: "Multiple studies have shown that respondents’ awareness of anonymity policies can significantly reduce the rate of misreporting (Ong and Weiss 2006)." -- this is more concise and formal without being too uptight.
+
+- You're using a different definition for the bystander effect than the one I'm familiar with. https://en.wikipedia.org/wiki/Bystander_effect. If you got the term from your review paper, then I would add a footnote clarifying that this is a different use of the term than what is used in social psych.
+
+- I would additionally separate format into self-administered and interviewer-administered, and then separate interviewer-administered into one-on-one and group, then split group into online and in-person. The key distinction seems to be whether others will overhear responses. It's not clear to me that the online vs. in-person distinction matters as much as the number of people. Also consider focus groups, where there is one facilitator and multiple respondents having a discussion -- presentation bias (what I'd use for your bystander effect term) is definitely a factor in that setting.
+
+- consider using callouts for your "best uses" sections that are consistent throughout the techniques section.
+
+- RRT limitations -- I think you probably want to point out instead that the sample size calculation must take into account the probability mechanism used to randomize responses -- for instance, you would need about 2x the number of responses if using a fair coin, as your estimate has to be adjusted by this probability.
+
+- ICT -- typo -- "without specifying with responses apply, creating a count variable." I think with should be which?
+
+- BPT -- "Note that you are not usually aware of whether or not the respondent has actually participated in an activity beforehand." -- this is a bit awkward and i'm not sure it's grammatically correct. I might instead say something like... "This technique does not require actually consulting the external source for additional data." I think you should also include the caveat that if the participant knows the claim is false, then the researcher/participant trust relationship will suffer and the participant may sabotage answers.
+
+- Should your sensitivity question pathway actually be labeled with a bit more precision? "Design flow for surveys with sensitive questions" or something like that?
+
+- Not many additional resources provided -- it may be best to aggregate these into a section at the end and then use an aside div to mention them at the proper location in the text.
+
+
+- There were some compile issues that gradually went away with some editing of the index.qmd document and the yaml metadata. It's best to consolidate most of the metadata stuff into _quarto.yml -- this is different from a standalone quarto file because it's a book, so anything that should apply to the whole document goes into the _quarto.yml file. Anything that's only for a little piece of the book goes into the yaml matter in that single file. Getting rid of the gfm format (not available for books) fixed the references being put at the bottom of the page and not in the references section.

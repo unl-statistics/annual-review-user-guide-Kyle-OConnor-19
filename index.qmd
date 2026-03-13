@@ -1,27 +1,12 @@
----
-title: "User Guide: Handling Sensitive Questions in Surveys"
-author: "Kyle O'Connor"
-format:
-  html:
-    mermaid-format: png
-    embed-resources: true
-    css: webex.css
-    include-after-body: webex.js
-  gfm:
-    mermaid-format: png
-  pdf:
-    mermaid-format: png
----
 
-# Handling Sensitive Questions in Surveys
+# Introduction
 
 When it comes to survey design, there comes a time where researchers and analysts are looking to examine some of the under-the-surface aspects of a population. Large businesses want to examine the financial standings of a city's residents to see if a new store would be able to generate profits. Insurance providers want to understand the health of their customers to understand potential future risks and to provide adequate preventive care. Pollsters want to understand the political leanings of key swing districts for an upcoming election. No matter the goal, collecting accurate data can often be very difficult because respondents are wary of the nature of these studies. As a result, respondents often like to misrepresent their true behavior to make themselves appear like better people. The effects of this phenomenon, known as sensitivity, can make analyzing the results of surveys particularly difficult and even potentially misleading in some scenarios.
 
 The goal of this user guide is thus to guide you through the process of understanding what sensitivity is, how it can bias the results, and provide some strategies you can use to combat its effects.
 
-------------------------------------------------------------------------
 
-[**Definitions**]{.underline}
+## Definitions
 
 For the purposes of this user guide, it is helpful to clearly define the terms that will be used throughout this guide.
 
@@ -53,14 +38,16 @@ This user guide focuses on two types of biases: misreporting bias and nonrespons
 
 [**Nonresponse Bias**]{style="background-color: #FFFF00;"} - Respondents choose not to provide any response to a question. This occurs because respondents feel that revealing any answer may cause negative social ramifications. Nonresponse bias can be especially troubling for surveyors because a single nonresponse (known as *unit nonresponse*) can cause a chain reaction of multiple nonresponses (known as *chain nonresponse*) throughout the rest of the survey.
 
-The unique challenge that these two biases present for researchers is that they are not independent. When researchers try to suppress the effect of nonresponse, if often results in an increase in misreporting, and the same is true in reverse. This is because when respondents are told that not responding isn't an option, they often will misreport instead to try and conceal the truth. Likewise, if respondents are told not to misrepresent themselves, they often will choose not to respond to sensitive questions instead. This creates an inverse relationship between the two bias types, which makes eliminating both bias types nearly impossible. That being said, the goal of this user guide is to help suppress the effects of these biases, even if full elimination is not possible.
+The unique challenge that these two biases present for researchers is that they are not independent, as shown in @fig-inverse-nonresponse. When researchers try to suppress the effect of nonresponse, if often results in an increase in misreporting, and the same is true in reverse. This is because when respondents are told that not responding isn't an option, they often will misreport instead to try and conceal the truth. Likewise, if respondents are told not to misrepresent themselves, they often will choose not to respond to sensitive questions instead. This creates an inverse relationship between the two bias types, which makes eliminating both bias types nearly impossible. That being said, the goal of this user guide is to help suppress the effects of these biases, even if full elimination is not possible.
 
 ```{r}
 #| echo: false
 #| results: "asis"
 #| message: false
 #| warning: false
-#| label: graph
+#| label: fig-inverse-nonresponse
+#| fig-cap: There is an inverse relationship between misreporting bias and nonresponse bias. When participants are forced to respond, they will tend to misreport, but when accuracy in reporting is emphasized, participants will tend to leave questions blank.
+
 par(pty = "s", mar = c(2.5, 2.5, 2, 0.5), mgp = c(1.2, 0, 0))
 x<-seq(1, 10, length.out=50)
 y<-1-x
@@ -79,9 +66,7 @@ box()
 
 ```
 
-------------------------------------------------------------------------
-
-[**Prerequisites**]{.underline}
+## Prerequisites
 
 Before addressing the matter of sensitive questions themselves, some pre-requisite knowledge is needed. It is assumed for this user guide that:
 
@@ -91,18 +76,18 @@ Before addressing the matter of sensitive questions themselves, some pre-requisi
 
 3.  The audience/target population of the survey is known and clearly defined. When designing the survey, understanding the response group can help provide some insights before anyone has a chance to reply. This research should only be preliminary, as the survey will help identify more specific population characteristics of interest. To help with this preliminary research, ask yourself the following questions:
 
--   Is the target population known for having a higher percentage of people that identify as falling under a particular ethnicity or religion?
--   What historical or current events are uniquely associated with this population?
--   What are some common traditions, customs, or beliefs held by this target population?
--   Is the population of interest known to hold certain political beliefs? If so, what are they?
+    -   Is the target population known for having a higher percentage of people that identify as falling under a particular ethnicity or religion?
+    -   What historical or current events are uniquely associated with this population?
+    -   What are some common traditions, customs, or beliefs held by this target population?
+    -   Is the population of interest known to hold certain political beliefs? If so, what are they?
 
-Now that you understand the basics and pre-requisites, we can begin examining the process of handling sensitive questions in surveys.
+Now that you understand the basics and pre-requisites, we can begin examining the process of handling sensitive questions in surveys, which is outlined in @fig-sensitive-question-path.
 
-![Sensitivity Question Pathway](guide_pathway.png)
+![Sensitivity Question Pathway](guide_pathway.png){#fig-sensitive-question-path}
 
-------------------------------------------------------------------------
+# Survey Design Considerations
 
-[**Data Protection**]{.underline}
+## Data Protection
 
 No matter the method and format you decide to use, it is important to have a [**clear privacy policy**]{.underline} in place that can be easily communicated to your respondents in word and/or in speech. This privacy policy should include specific mentions of the following:
 
@@ -115,7 +100,13 @@ No matter the method and format you decide to use, it is important to have a [**
 ::: callout-important
 ## Confidentiality vs Anonymity
 
-Confidentiality and anonymity are often lumped in together as the same thing when it comes to survey design, and it can be easy to confuse the two. Confidentiality means that researchers will know which person correlates to a set of responses, while anonymity means that researchers will only have access to the total pool of responses, and they will be unable to connect respondents to responses directly. Confidentiality policies and anonymity policies are not the same thing, so make sure to include distinct mentions of each policy.
+Confidentiality and anonymity are often lumped in together as the same thing when it comes to survey design, and it can be easy to confuse the two.
+
+- *Confidentiality* means that researchers will know which person correlates to a set of responses.
+- *Anonymity* means that researchers will only have access to the total pool of responses, and they will be unable to connect respondents to responses directly.
+
+Confidentiality policies and anonymity policies are not the same thing, so make sure to include distinct mentions of each policy.
+
 :::
 
 Multiple studies, such as one done by psychology researchers Anthony D. Ong and David J. Weiss, have repeatedly shown that respondents' awareness of anonymity policies can significantly reduce the rate of misreporting [@ongImpactAnonymityResponses2006]. When respondents feel comfortable in the handling of their data, it allows them to feel that the environment they are sharing personal information in is safe and respected.
@@ -124,57 +115,64 @@ When creating these policies, clearly outline how respondents' information will 
 
 If at any point a respondent requests you to clarify or restate any of these privacy policies, do so. Maintaining a trustworthy relationship is the primary goal to ensure the highest quality data.
 
-------------------------------------------------------------------------
 
-[**Formatting**]{.underline}
+## Format and Modality
 
 The format of a survey can have a significant impact on the effects of sensitivity. Based on the type of formatting used for the survey, different approaches will be needed.
 
-***Online/Virtual***
+### Online/Virtual
 
 For online surveys, an asynchronous or self-administered format will produce much higher accuracy rates compared to virtual meetings. As noted by author and survey science researcher Ting Yan, "Self-administered modes of data collection include mail surveys, web surveys, audio computer-assisted self-interviewing surveys, paper and pencil questionnaires, and so on. Unlike interviewer-administered surveys, self-administration eliminates the need to verbally report answers to sensitive questions to an interviewer and removes respondents’ concerns about privacy and looking good in front of the interviewer. Furthermore, self-administration also reduces the risk of someone else overhearing the answer" [@yanConsequencesAskingSensitive2020].
 
 The other option for an online format (that cannot be done asynchronously) comes in the form of virtual meetings. These involve a surveyor speaking with a respondent directly through voice or video calls. Because self-administration is not an option in this type of survey, there is one key consideration to take note of, a phenomenon known as the Bystander Effect.
 
 ::: callout-warning
-## The Bystander Effect
+### The Bystander Effect
 
 In both virtual and in-person settings, be cautious of the respondent's environment. If there are other people in the room, there is a high risk of response interference from the **Bystander Effect**, which can dramatically increase the rate of misreporting bias. This phenomenon occurs because respondents don't want to share sensitive information about themselves with others in the room, even with close family members or friends, because they fear negative social consequences. If possible, encourage all bystanders to leave the area in which the respondent is providing answers. If the respondent is completing the survey asynchronously, strongly encourage them to complete the survey away from others.
 :::
 
-***In-Person***
+### In-Person
 
 For in-person formats, your goal is to create an environment that the respondent feels comfortable speaking about sensitive topics in. Clearly state your privacy policies to the respondent so they can understand how the information they are providing will be protected. Ask them if they have any questions about these policies before you start the survey.
 
 Additionally, the Bystander Effect is a key consideration. If possible, limit the number of people present with the respondent to the smallest possible. In some cases, it will be impossible to remove all non-respondents from the area. For example, a parent may insist on sitting in for a discussion with their child. If this occurs, politely explain that them not being present will improve the accuracy of the survey. If they still insist despite your recommendation, your remaining options consist of understanding that the results you collect may be influenced by a form of bias, or removing the child as a valid datapoint from the study after completing the survey.
 
-------------------------------------------------------------------------
+# Sensitive Data Collection Techniques
 
-[**Collection Techniques**]{.underline}
+After understanding your format, you can now begin to look at collection methods. Fortunately, these methods will work across any of the previously mentioned formats. These methods can be selected at your own discretion based on the type of sensitive question.
 
-After understanding your format, you can now begin to look at collection methods. Fortunately, these methods will work across any of the previously mentioned formats. These methods can be selected at your own discretion based on the type of sensitive question. Even when selecting different techniques, there are a few universal guidelines to follow:
+## Universal guidelines
+<!--Even when selecting different techniques, there are a few universal guidelines to follow:-->
+
+Regardless of the technique selected or the sensitivity of the topic, it is important to use these best practice guidelines for writing questions.
 
 -   Avoid using unfamiliar vocabulary or jargon in your questions. Make the question easily understandable so that the respondent knows exactly what you are asking about.
 -   If you need to ask a complex question, try breaking the question down into simpler, easy-to-answer parts. You can compile these results for analysis afterwards, but try not to overwhelm your respondents with one giant question.
--   If possible, provide supplementary material that may help respondents answer questions. If you are asking about an event that took place in the past, see if you can identify a date, location, and/or time. As psychologist Roger Tourangeau states, "Reporting errors due to incorrect dating seem to arise through several distinct mechanisms. People may make incorrect inferences about timing based on the accessibility (or other properties) of the memory, incorrectly guess a date within an uncertain range, and round vague temporal information to prototypical values (such as 30 days)" [@tourangeauPsychologySurveyResponse2000]. If the question involves units, clearly state what the unit is (amount, time, location).
+-   If possible, provide supplementary material that may help respondents answer questions.
 
-1.  **Sensitive Question Placement**
+    - If you are asking about an event that took place in the past, see if you can identify a date, location, and/or time. As psychologist Roger Tourangeau states, "Reporting errors due to incorrect dating seem to arise through several distinct mechanisms. People may make incorrect inferences about timing based on the accessibility (or other properties) of the memory, incorrectly guess a date within an uncertain range, and round vague temporal information to prototypical values (such as 30 days)" [@tourangeauPsychologySurveyResponse2000].
+    - If the question involves units, clearly state what the unit is (amount, time, location).
+
+## Sensitive Question Placement
 
 Place sensitive questions towards the middle of a survey, as it allows trust to form between the respondent and the survey with early questions, while not back-loading all of the sensitive questions at the end that can make the respondent feel that the survey as a whole was a facade used to only get answers for the sensitive question(s). An exception to this rule concerns questions that ask about a respondent's identifying characteristics. As noted by researcher Maddie Brown, it is best to have these questions at the end of the survey [@HandlingSensitiveQuestions], as these types of questions can often lead to chain nonresponse if placed towards the beginning of a survey.
 
-*Example*:
+::: {#fig-sensitive-question-placement layout-ncol=2}
 
-::: {layout-ncol=2}
 ![Correct Method](guide_correct.png)
 
 ![Incorrect Method](guide_incorrect3.png)
+
+It is important to place sensitive questions in the middle of a survey. In longer surveys, it is reasonable to mix sensitive and non-sensitive questions as long as they are placed in the middle of the survey.
+
 :::
 
-In this example, notice that the sensitive questions for the correct model are placed in the middle of the survey sequence, while for the incorrect model, they are found at the beginning and end. Note that the sensitive questions don't necessarily need to be placed directly one after another, as this model only represents a 4-question survey. For longer surveys, the goal is to centralize most, if not all sensitive questions towards the middle of the survey. Non-sensitive questions can be interspersed within the middle of the survey as well.
+In @fig-sensitive-question-placement, notice that the sensitive questions for the correct model are placed in the middle of the survey sequence, while for the incorrect model, they are found at the beginning and end. Note that the sensitive questions don't necessarily need to be placed directly one after another, as this model only represents a 4-question survey. For longer surveys, the goal is to centralize most, if not all sensitive questions towards the middle of the survey. Non-sensitive questions can be interspersed within the middle of the survey as well.
 
 [*Best Uses*]{.underline}: All Sensitive Question Types. As mentioned previously, an exception is made for sensitive questions that focus on demographics, as it is best to put those at the end of the survey.
 
-2.  **Priming**
+## Priming
 
 When phrasing sensitive questions, try placing a forgiven tone or provide an outlet for saving face. Show to the respondent that you are aware of, and still respect, options that may not be the most socially desirable.
 
@@ -191,7 +189,7 @@ In this example, note that there are several responses that help the respondent 
 
 [*Best Uses*]{.underline}: Questions that focus on a respondent's ability to recall knowledge or activity (Are you aware of..., What do you know about..., Do you remember...).
 
-3.  **Ranging Values**
+## Categorical Value Ranges
 
 Instead of asking for specific answers, provide a range of possible values that the respondent can select instead. This will give the respondent an extra layer of response anonymity while still providing useful information to the surveyor.
 
@@ -211,23 +209,23 @@ In this example, providing a range allows the respondent to not worry about prov
 
 [*Best Uses*]{.underline}: Questions that aim to capture a numerical amount in regards to sensitive activity. This works especially well with income and money-based questions.
 
-4.  **Randomized Response Technique (RRT)**
+## Randomized Response Technique (RRT)
 
 Explanation: Before answering each sensitive question, a random, fair, and binomial (2-option) event occurs. Based on the result of that random event, the respondent either answers the question honestly or provides an answer that allows them to conceal the truth.
 
-![Randomized Response Technique Flowchart](guide_RRT.png)
+![Randomized Response Technique Flowchart](guide_RRT.png){#fig-guide-rrt}
 
-In this example, the randomization tool and the "success" and "failure" outcomes can be customized. For instance, you may choose to flip what defines a success or failure, or use an alternative randomization method such as a random number generator.
+In the example shown in @fig-guide-rrt, the randomization tool and the "success" and "failure" outcomes can be customized. For instance, you may choose to flip what defines a success or failure, or use an alternative randomization method such as a random number generator.
 
 ::: callout-important
-## Limitations of RRT
+### Limitations of RRT
 
 If you are using RRT, it is important to understand that because you do not know whether or not a "no" is an accurate reflection of the respondent's behavior, the result is a smaller useful sample size. Whether or not the respondent says "no" honestly or not is unknown to you, so these answers must be discarded.
 :::
 
 [*Best Uses*]{.underline}: In-person or virtual meeting formats work best for RRT, because there is usually a surveyor involved who can perform the randomization in front of the respondent and conveys the results to them. This method also works best for questions whose response is binary (yes or no).
 
-5.  **Item Count Technique (ICT)**
+## Item Count Technique (ICT)
 
 This method involves randomly assigning respondents with a list of possible options to a question, including an option that directly correlates with the sensitive question. The respondent is then asked to state how many options apply to them, without specifying with responses apply, creating a count variable.
 
@@ -238,6 +236,7 @@ How many of the following statements accurately represent you?
 -   I have a kid in local public school.
 -   I utilize the city's hiking trails.
 -   I read the local newspaper.
+
 :::
 
 ::: {.callout-note title="Example B: Treatment"}
@@ -256,7 +255,7 @@ In this example, the respondent is randomly assigned to answer one of the two qu
 
 For more information about Item Count, consider checking out this resource created by [Alessandra Gaia](https://methods.sagepub.com/foundations/download/item-count-technique#:~:text=on%20sensitive%20topics.-,The%20Technique,are%20rele-%20vant%20for%20you.&text=I%20grew%20up%20in%20England.&text=I%20have%20visited%20Melbourne.&text=I%20have%20seen%20the%20movie%20Pulp%20Fiction.&text=I%20have%20taken%20cocaine%20or,which%20items%20apply%20to%20them.&text=%C2%AF%20xa%20+%20s%20is%20the,a'%20plus%20the%20sensitive%20item.&text=%C2%AF%20xa%20is%20the%20average,counted%20in%20list%20'a'.).
 
-6.  **Bogus Pipeline Technique (BPT)**
+## Bogus Pipeline Technique (BPT)
 
 This method involves convincing the respondent that their answers can be verified through an external source. Note that you are not usually aware of whether or not the respondent has actually participated in an activity beforehand.
 
@@ -273,17 +272,17 @@ In this example, the respondent is being conditioned to believe that a false ans
 
 ------------------------------------------------------------------------
 
-[**Measuring Results**]{.underline}
+# Measuring Results
 
 After collecting the data, it is useful to collect some baseline measurements of the survey's effectiveness. When it comes to analyzing the results, it can be helpful to examine the impact each bias type could have on the result.
 
-**Nonresponse Bias**
+## Nonresponse Bias
 
 The easiest way to measure nonresponse rates is to measure the percentage of N/A responses. These are responses that are either left unanswered for written surveys, or the respondent refused to provide a proper answer to for verbal or written surveys. For example, if you have a total of 500 responses from 50 people, and 100 total responses can be classified as "N/A", the nonresponse rate would be 20%. The lower this percentage, the better.
 
 It is also a good idea to examine chain nonresponse. If the data was collected anonymously, it will be impossible to measure this. However, in cases where the response can be attributed to each respondent, check a random sample of respondents to see if they have multiple instances of nonresponse. If this is the case, it may be best to remove this respondent from the data analysis as their information may be unreliable.
 
-**Misreporting Bias**
+## Misreporting Bias
 
 Unfortunately there is no easy way to measure misreporting bias effects for sensitive questions without having access to some form of external verification data. While it is impossible to measure, there are a few exploratory methods you can use instead:
 
@@ -291,9 +290,7 @@ Unfortunately there is no easy way to measure misreporting bias effects for sens
 
 -   If the data you are analyzing relates to income or activity, try analyzing the shape of the distribution to see if it makes sense logically. For example, if you are analyzing an income plot, it will normally be a right-skewed distribution, with higher income earners being a much smaller percentage of the total population. The shape of the distribution will depend on the characteristics of the population you are sampling from, so check your preliminary research for what you believe these characteristics should be.
 
-------------------------------------------------------------------------
-
-[**Check your Understanding**]{.underline}
+## Check your Understanding
 
 ::: question
 ```{r}
