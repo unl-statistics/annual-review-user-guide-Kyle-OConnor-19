@@ -1,7 +1,7 @@
 
 # Introduction
 
-When it comes to survey design, there comes a time where researchers and analysts are looking to examine some of the under-the-surface aspects of a population. Large businesses want to examine the financial standings of a city's residents to see if a new store would be able to generate profits. Insurance providers want to understand the health of their customers to understand potential future risks and to provide adequate preventive care. Pollsters want to understand the political leanings of key swing districts for an upcoming election. No matter the goal, collecting accurate data can often be very difficult because respondents are wary of the nature of these studies. As a result, respondents often like to misrepresent their true behavior to make themselves appear like better people. The effects of this phenomenon, known as sensitivity, can make analyzing the results of surveys particularly difficult and even potentially misleading in some scenarios.
+In survey design, researchers and analysts will sometimes want to examine some of the under-the-surface aspects of a population. Large businesses want to examine the financial standings of a city's residents to see if a new store would be able to generate profits. Insurance providers want to understand the health of their customers to understand potential future risks and to provide adequate preventive care. Pollsters want to understand the political leanings of key swing districts for an upcoming election. No matter the goal, collecting accurate data can often be very difficult because respondents are wary of the nature of these studies. As a result, respondents often like to misrepresent their true behavior to make themselves appear like better people. The effects of this phenomenon, known as sensitivity, can make analyzing the results of surveys particularly difficult and even potentially misleading in some scenarios.
 
 The goal of this user guide is thus to guide you through the process of understanding what sensitivity is, how it can bias the results, and provide some strategies you can use to combat its effects.
 
@@ -12,17 +12,17 @@ For the purposes of this user guide, it is helpful to clearly define the terms t
 
 [**Sensitivity**]{style="background-color: #FFFF00;"} - A survey question is deemed sensitive whenever a respondent's answer can be seen as socially undesirable, personally intrusive, or result in a potential detrimental outcome if someone else were to find out about the respondent's answer. What makes sensitivity especially difficult to deal with is the fact that sensitivity is inherently subjective. What one person finds sensitive could be seen as a perfectly reasonable thing to ask about to another. However, there are a few general topics that, more often that not, people will deem to be sensitive no matter the circumstance, including:
 
--   **Religious and Political Beliefs**
+-   Religious and Political Beliefs
 
--   **Personal Health**
+-   Personal Health
 
--   **Income and Finances**
+-   Income and Finances
 
--   **Sexual Activity**
+-   Sexual Activity
 
--   **Criminal Record and Illegal Activity**
+-   Criminal Record and Illegal Activity
 
--   **Academic Standing and Record**
+-   Academic Standing and Record
 
 Note that this list is by no means exhaustive.
 
@@ -35,6 +35,8 @@ This user guide focuses on two types of biases: misreporting bias and nonrespons
 -   A respondent says that they only smoke 1 cigarette per day when they actually smoke 3 cigarettes per day. (Artificially Decreasing the True Value)
 
 -   A respondent says that they work out 7 times per week when they actually work out 2 times per week. (Artificially Increasing the True Value)
+
+-   A respondent rounds their height in inches as a multiple of 10 because it is easier to reference [@Shuang-Ming-Height].
 
 [**Nonresponse Bias**]{style="background-color: #FFFF00;"} - Respondents choose not to provide any response to a question. This occurs because respondents feel that revealing any answer may cause negative social ramifications. Nonresponse bias can be especially troubling for surveyors because a single nonresponse (known as *unit nonresponse*) can cause a chain reaction of multiple nonresponses (known as *chain nonresponse*) throughout the rest of the survey.
 
@@ -83,7 +85,7 @@ Before addressing the matter of sensitive questions themselves, some pre-requisi
 
 Now that you understand the basics and pre-requisites, we can begin examining the process of handling sensitive questions in surveys, which is outlined in @fig-sensitive-question-path.
 
-![Sensitivity Question Pathway](guide_pathway.png){#fig-sensitive-question-path}
+![Design Process Flowchart for Handling Sensitive Survey Questions](guide_pathway.png){#fig-sensitive-question-path}
 
 # Survey Design Considerations
 
@@ -102,14 +104,14 @@ No matter the method and format you decide to use, it is important to have a [**
 
 Confidentiality and anonymity are often lumped in together as the same thing when it comes to survey design, and it can be easy to confuse the two.
 
-- *Confidentiality* means that researchers will know which person correlates to a set of responses.
-- *Anonymity* means that researchers will only have access to the total pool of responses, and they will be unable to connect respondents to responses directly.
+- **Confidentiality** means that researchers will know which person correlates to a set of responses.
+- **Anonymity** means that researchers will only have access to the total pool of responses, and they will be unable to connect respondents to responses directly.
 
 Confidentiality policies and anonymity policies are not the same thing, so make sure to include distinct mentions of each policy.
 
 :::
 
-Multiple studies, such as one done by psychology researchers Anthony D. Ong and David J. Weiss, have repeatedly shown that respondents' awareness of anonymity policies can significantly reduce the rate of misreporting [@ongImpactAnonymityResponses2006]. When respondents feel comfortable in the handling of their data, it allows them to feel that the environment they are sharing personal information in is safe and respected.
+Multiple studies have repeatedly shown that respondents' awareness of anonymity policies can significantly reduce the rate of misreporting [@ongImpactAnonymityResponses2006]. When respondents feel comfortable in the handling of their data, it allows them to feel that the environment they are sharing personal information in is safe and respected.
 
 When creating these policies, clearly outline how respondents' information will be used, stored, and protected. The most important part about the surveyor-respondent relationship is maintaining a strong sense of trust. Without this belief, there is a much higher risk of misreporting or nonresponse bias. Make sure that this information is readily available to every participant throughout the survey process, especially before the survey begins.
 
@@ -129,7 +131,7 @@ The other option for an online format (that cannot be done asynchronously) comes
 ::: callout-warning
 ### The Bystander Effect
 
-In both virtual and in-person settings, be cautious of the respondent's environment. If there are other people in the room, there is a high risk of response interference from the **Bystander Effect**, which can dramatically increase the rate of misreporting bias. This phenomenon occurs because respondents don't want to share sensitive information about themselves with others in the room, even with close family members or friends, because they fear negative social consequences. If possible, encourage all bystanders to leave the area in which the respondent is providing answers. If the respondent is completing the survey asynchronously, strongly encourage them to complete the survey away from others.
+In both virtual and in-person settings, be cautious of the respondent's environment. If there are other people in the room, there is a high risk of response interference from the **Bystander Effect** ^[The definition for Bystander Effect used in this Guide is the one used in [@yanConsequencesAskingSensitive2020], and it is different from the one used in the field of social psychology.], which can dramatically increase the rate of misreporting bias. This phenomenon occurs because respondents don't want to share sensitive information about themselves with others in the room, even with close family members or friends, because they fear negative social consequences. If possible, encourage all bystanders to leave the area in which the respondent is providing answers. If the respondent is completing the survey asynchronously, strongly encourage them to complete the survey away from others.
 :::
 
 ### In-Person
@@ -142,7 +144,7 @@ Additionally, the Bystander Effect is a key consideration. If possible, limit th
 
 After understanding your format, you can now begin to look at collection methods. Fortunately, these methods will work across any of the previously mentioned formats. These methods can be selected at your own discretion based on the type of sensitive question.
 
-## Universal guidelines
+## Universal Guidelines
 <!--Even when selecting different techniques, there are a few universal guidelines to follow:-->
 
 Regardless of the technique selected or the sensitivity of the topic, it is important to use these best practice guidelines for writing questions.
@@ -211,7 +213,7 @@ In this example, providing a range allows the respondent to not worry about prov
 
 ## Randomized Response Technique (RRT)
 
-Explanation: Before answering each sensitive question, a random, fair, and binomial (2-option) event occurs. Based on the result of that random event, the respondent either answers the question honestly or provides an answer that allows them to conceal the truth.
+Before answering each sensitive question, a random, fair, and binomial (2-option) event occurs. Based on the result of that random event, the respondent either answers the question honestly or provides an answer that allows them to conceal the truth.
 
 ![Randomized Response Technique Flowchart](guide_RRT.png){#fig-guide-rrt}
 
@@ -220,14 +222,14 @@ In the example shown in @fig-guide-rrt, the randomization tool and the "success"
 ::: callout-important
 ### Limitations of RRT
 
-If you are using RRT, it is important to understand that because you do not know whether or not a "no" is an accurate reflection of the respondent's behavior, the result is a smaller useful sample size. Whether or not the respondent says "no" honestly or not is unknown to you, so these answers must be discarded.
+If you are using RRT, it is important to understand that because you do not know whether or not a "no" is an accurate reflection of the respondent's behavior, the result is a smaller useful sample size. Whether or not the respondent says "no" honestly or not is unknown to you, so these answers must be discarded. Additionally, if you want the estimates to remain the same after using RRT, the sample size used will need to be expanded to account for the use of pre-determined responses. For example, the sample size will need to be 2x as large using a fair coin randomization method, as about half of all responses will result in the pre-determined response and lose their reliability.
 :::
 
 [*Best Uses*]{.underline}: In-person or virtual meeting formats work best for RRT, because there is usually a surveyor involved who can perform the randomization in front of the respondent and conveys the results to them. This method also works best for questions whose response is binary (yes or no).
 
 ## Item Count Technique (ICT)
 
-This method involves randomly assigning respondents with a list of possible options to a question, including an option that directly correlates with the sensitive question. The respondent is then asked to state how many options apply to them, without specifying with responses apply, creating a count variable.
+This method involves randomly assigning respondents with a list of possible options to a question, including an option that directly correlates with the sensitive question. The respondent is then asked to state how many options apply to them, without specifying which responses apply, creating a count variable.
 
 ::: {.callout-note title="Example A:  Control"}
 How many of the following statements accurately represent you?
@@ -253,11 +255,15 @@ In this example, the respondent is randomly assigned to answer one of the two qu
 
 [*Best Uses*]{.underline}: Questions that focus on social behavior such as sexual activity, use of political rights such as voting, physical exercise, and illegal activity.
 
+::: {.aside}
+
 For more information about Item Count, consider checking out this resource created by [Alessandra Gaia](https://methods.sagepub.com/foundations/download/item-count-technique#:~:text=on%20sensitive%20topics.-,The%20Technique,are%20rele-%20vant%20for%20you.&text=I%20grew%20up%20in%20England.&text=I%20have%20visited%20Melbourne.&text=I%20have%20seen%20the%20movie%20Pulp%20Fiction.&text=I%20have%20taken%20cocaine%20or,which%20items%20apply%20to%20them.&text=%C2%AF%20xa%20+%20s%20is%20the,a'%20plus%20the%20sensitive%20item.&text=%C2%AF%20xa%20is%20the%20average,counted%20in%20list%20'a'.).
+
+:::
 
 ## Bogus Pipeline Technique (BPT)
 
-This method involves convincing the respondent that their answers can be verified through an external source. Note that you are not usually aware of whether or not the respondent has actually participated in an activity beforehand.
+This method involves convincing the respondent that their answers can be verified through an external source. When using BPT, note that it does not require actually consulting an external source to verify the data, as the goal is just to convince the respondent that answers can be validated using an external source.
 
 ::: {.callout-note title="Example"}
 We are able to cross-reference these results with a database of voter participation. That being said, did you participate in last year's local election?
@@ -267,6 +273,12 @@ We are able to cross-reference these results with a database of voter participat
 :::
 
 In this example, the respondent is being conditioned to believe that a false answer would have negative consequences, as their response can be validated. They are thus more likely to give their honest answer, even if you do not actually have their voter participation records.
+
+::: callout-important
+### Limitations of BPT
+
+When using BPT, if a respondent knows that their answer cannot be validated for some reason, or knows that you do not actually have an external source to verify their statements, the relationship of trust between you and the respondent can be completely eroded. As a result, it may lead to chain nonresponse or chain misreporting, invalidating the respondent's entire set of answers.
+:::
 
 [*Best Uses*]{.underline}: Questions that focus on social behavior such as sexual activity, use of political rights such as voting, physical exercise, and illegal activity.
 
@@ -290,48 +302,7 @@ Unfortunately there is no easy way to measure misreporting bias effects for sens
 
 -   If the data you are analyzing relates to income or activity, try analyzing the shape of the distribution to see if it makes sense logically. For example, if you are analyzing an income plot, it will normally be a right-skewed distribution, with higher income earners being a much smaller percentage of the total population. The shape of the distribution will depend on the characteristics of the population you are sampling from, so check your preliminary research for what you believe these characteristics should be.
 
-## Check your Understanding
+--------------------------------------------------------------------------------
 
-::: question
-```{r}
-#| echo: false
-#| results: "asis"
-#| message: false
-#| warning: false
-library("exams2forms")
-exams2forms("Q1.Rmd", question = "Check your Understanding")
-```
-:::
+# Additional Resources
 
-::: question
-```{r}
-#| echo: false
-#| results: "asis"
-#| message: false
-#| warning: false
-library("exams2forms")
-exams2forms("Q2.Rmd")
-```
-:::
-
-::: question
-```{r}
-#| echo: false
-#| results: "asis"
-#| message: false
-#| warning: false
-library("exams2forms")
-exams2forms("Q3.Rmd")
-```
-:::
-
-::: question
-```{r}
-#| echo: false
-#| results: "asis"
-#| message: false
-#| warning: false
-library("exams2forms")
-exams2forms("Q4.Rmd")
-```
-:::
