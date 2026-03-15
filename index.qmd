@@ -227,6 +227,12 @@ If you are using RRT, it is important to understand that because you do not know
 
 [*Best Uses*]{.underline}: In-person or virtual meeting formats work best for RRT, because there is usually a surveyor involved who can perform the randomization in front of the respondent and conveys the results to them. This method also works best for questions whose response is binary (yes or no).
 
+::: {.aside}
+
+For more information about Randomized Response, consider checking out this resource created by [Graeme Blair, Kosuke Imai, and Yang-Yang Zhou](http://www.tandfonline.com/doi/full/10.1080/01621459.2015.1050028.).
+
+:::
+
 ## Item Count Technique (ICT)
 
 This method involves randomly assigning respondents with a list of possible options to a question, including an option that directly correlates with the sensitive question. The respondent is then asked to state how many options apply to them, without specifying which responses apply, creating a count variable.
@@ -301,8 +307,3 @@ Unfortunately there is no easy way to measure misreporting bias effects for sens
 -   Examine the data for potential outliers: Randomly select a sample of responses, and cross-check the results with the question. If the question is open-ended, does the response seem plausible? Some respondents may choose to provide nonsensical answers in response to sensitive questions, so check to see if any exist. If they do, remove the data point from your analysis.
 
 -   If the data you are analyzing relates to income or activity, try analyzing the shape of the distribution to see if it makes sense logically. For example, if you are analyzing an income plot, it will normally be a right-skewed distribution, with higher income earners being a much smaller percentage of the total population. The shape of the distribution will depend on the characteristics of the population you are sampling from, so check your preliminary research for what you believe these characteristics should be.
-
---------------------------------------------------------------------------------
-
-# Additional Resources
-
