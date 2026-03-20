@@ -50,7 +50,7 @@ The unique challenge that these two biases present for researchers is that they 
 #| label: fig-inverse-nonresponse
 #| fig-cap: There is an inverse relationship between misreporting bias and nonresponse bias. When participants are forced to respond, they will tend to misreport, but when accuracy in reporting is emphasized, participants will tend to leave questions blank.
 
-par(pty = "s", mar = c(2.5, 2.5, 2, 0.5), mgp = c(1.2, 0, 0))
+par(pty="s", mar=c(2.5, 2.5, 2, 0.5), mgp=c(1.2, 0, 0))
 x<-seq(1, 10, length.out=50)
 y<-1-x
 plot(x=x,
@@ -62,8 +62,8 @@ plot(x=x,
      yaxs = "i",
      xlab="Nonresponse Bias Rate", 
      ylab="Misreporting Bias Rate")
-axis(side = 1, labels = FALSE)
-axis(side = 2, labels = FALSE)
+axis(side=1, labels=FALSE)
+axis(side=2, labels=FALSE)
 box()
 
 ```
@@ -288,6 +288,11 @@ When using BPT, if a respondent knows that their answer cannot be validated for 
 
 [*Best Uses*]{.underline}: Questions that focus on social behavior such as sexual activity, use of political rights such as voting, physical exercise, and illegal activity.
 
+::: {.aside}
+
+For more information about Item Count, consider checking out this resource created by [NeuroLaunch](https://neurolaunch.com/bogus-pipeline-social-psychology/).
+
+:::
 ------------------------------------------------------------------------
 
 # Measuring Results
@@ -307,3 +312,13 @@ Unfortunately there is no easy way to measure misreporting bias effects for sens
 -   Examine the data for potential outliers: Randomly select a sample of responses, and cross-check the results with the question. If the question is open-ended, does the response seem plausible? Some respondents may choose to provide nonsensical answers in response to sensitive questions, so check to see if any exist. If they do, remove the data point from your analysis.
 
 -   If the data you are analyzing relates to income or activity, try analyzing the shape of the distribution to see if it makes sense logically. For example, if you are analyzing an income plot, it will normally be a right-skewed distribution, with higher income earners being a much smaller percentage of the total population. The shape of the distribution will depend on the characteristics of the population you are sampling from, so check your preliminary research for what you believe these characteristics should be.
+
+# Additional Resources
+
+For further assistance about specific aspects of this user guide, please consult some of the resources provided below. These resources are being compiled from the ones listed next to certain sections of the user guide.
+
+Randomized Response Technique - [Check out this Guide created by Graeme Blair, Kosuke Imai, and Yang-Yang Zhou](http://www.tandfonline.com/doi/full/10.1080/01621459.2015.1050028.).
+
+Item Count Technique (ICT) - [Check out this Guide created by Alessandra Gaia](https://methods.sagepub.com/foundations/download/item-count-technique#:~:text=on%20sensitive%20topics.-,The%20Technique,are%20rele-%20vant%20for%20you.&text=I%20grew%20up%20in%20England.&text=I%20have%20visited%20Melbourne.&text=I%20have%20seen%20the%20movie%20Pulp%20Fiction.&text=I%20have%20taken%20cocaine%20or,which%20items%20apply%20to%20them.&text=%C2%AF%20xa%20+%20s%20is%20the,a'%20plus%20the%20sensitive%20item.&text=%C2%AF%20xa%20is%20the%20average,counted%20in%20list%20'a'.).
+
+Bogus Pipeline Technique (BPT) - [Check out this Guide created by NeuroLaunch](https://neurolaunch.com/bogus-pipeline-social-psychology/)
