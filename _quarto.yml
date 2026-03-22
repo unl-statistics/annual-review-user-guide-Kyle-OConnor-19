@@ -2,7 +2,7 @@ project:
   type: book
   output-dir: docs
 
-date: today
+date: 03/27/2026
 date-format: long
 
 from: markdown+emoji
@@ -27,7 +27,8 @@ format:
     highlight-style: a11y
     theme: cosmo
     code-copy: true
+    toc-title: "Table of Contents"
   pdf:
     documentclass: scrreprt
-
+    toc-title: "Table of Contents"
 
